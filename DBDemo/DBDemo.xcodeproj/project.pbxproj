@@ -15,6 +15,7 @@
 		69E128661AF4DE4100C189EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E128651AF4DE4100C189EC /* Images.xcassets */; };
 		69E128691AF4DE4100C189EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E128671AF4DE4100C189EC /* LaunchScreen.xib */; };
 		69E128751AF4DE4100C189EC /* DBDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E128741AF4DE4100C189EC /* DBDemoTests.m */; };
+		69E128801AF4DE5E00C189EC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1287F1AF4DE5E00C189EC /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		69E1286E1AF4DE4100C189EC /* DBDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E128731AF4DE4100C189EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69E128741AF4DE4100C189EC /* DBDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDemoTests.m; sourceTree = "<group>"; };
+		69E1287F1AF4DE5E00C189EC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E128801AF4DE5E00C189EC /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				69E128541AF4DE4100C189EC /* DBDemo */,
+				69E1287E1AF4DE4D00C189EC /* Frameworks */,
 				69E128711AF4DE4100C189EC /* DBDemoTests */,
 				69E128531AF4DE4100C189EC /* Products */,
 			);
@@ -120,6 +124,14 @@
 				69E128731AF4DE4100C189EC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69E1287E1AF4DE4D00C189EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69E1287F1AF4DE5E00C189EC /* libsqlite3.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
